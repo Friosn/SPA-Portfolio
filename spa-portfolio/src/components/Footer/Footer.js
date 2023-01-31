@@ -1,14 +1,12 @@
 import "./Footer.css";
 import { Button } from "../Button/Button";
 
-export const Footer = () => {
-  document.querySelector("footer").innerHTML = `
+export const Footer = () => `
   <h2>Contact me through</h2>
   <div>
     ${Button("/icons/github.png", "GitHub")}
-    ${Button("../../../public/icons/linkedin.png", "Linkedin")}
-    ${Button("../../../public/icons/telegram.png", "Telegram")}
-    ${Button("../../../public/icons/link.png", "My Portfolio with Typescript")}
+    ${Button("/icons/linkedin.png", "Linkedin")}
+    ${Button("/icons/telegram.png", "Telegram")}
+    ${Button("/icons/link.png", "My Portfolio with Typescript")}
   </div>
   `;
-};

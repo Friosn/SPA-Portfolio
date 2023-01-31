@@ -1,5 +1,18 @@
 import "./NavBar.css";
 
+export const NavBar = () =>
+  `<nav>
+    <h2>Hey! Wake up 🦉</h2>
+    <a href="/" data-link></a>
+        <ul>
+            <li><a href="/Home">Projects</a></li>
+            <li><a href="/Contact">Contact</a></li>
+            <li><a href="/About">About</a></li>    
+            <li><button id="themeBtn">🌞</button></li>   
+        </ul>
+    </nav>
+    `;
+
 export const changeTheme = () => {
   const themeBtn = document.querySelector("#themeBtn");
   themeBtn.addEventListener("click", () => {
@@ -16,20 +29,3 @@ export const changeText = () => {
     themeBtn.innerText = "🌞";
   }
 };
-
-export const NavBar = () => {
-  `<nav>
-    <h2>Friosn 🦉</h2>
-    <a href="/" data-link>My Page</a>
-        <ul>
-            <li><a href="/Home">Projects</a></li>
-            <li><a href="/contact">Contact</a></li>
-            <li><a href="/about">About</a></li>    
-            <li><button id="themeBtn">🌞</button></li>   
-        </ul>
-    </nav>
-    `;
-};
-/* export const NavBar = () => {
-  document.querySelector("header").innerHTML = template();
-}; */

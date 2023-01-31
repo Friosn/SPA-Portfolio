@@ -33,6 +33,7 @@ body {
   background-color: var(--bg-dark);
   color: var(--primary-dark);
   transition: all 0.5s ease-in-out;
+  height: 100vh;
 }
 
 .light {
@@ -41,7 +42,7 @@ body {
 }
 
 main {
-  min-height: 80vh;
+  min-height: 58vh;
 }
 
 a,

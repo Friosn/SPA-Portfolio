@@ -6,6 +6,7 @@ footer{
     gap: 4rem;
     flex-wrap: wrap;
     margin: 2rem 0;
+    
 }
 
 @media (max-width: 770px) {

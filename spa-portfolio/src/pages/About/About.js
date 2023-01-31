@@ -1,1 +1,1 @@
-export const template = () => `<h1>About</h1>`;
+export const About = () => `<h1>About</h1>`;
