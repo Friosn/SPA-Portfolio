@@ -4,8 +4,8 @@ import { template as contact } from "../pages/Contact";
 import { template as about } from "../pages/About";
 import { template as notfound } from "../pages/notFound";
 //import listeners from navBar
-import { listeners as navBarListeners } from "../components/NavBar";
-import { listeners as footerListeners } from "../components/Footer";
+import { listeners as navBarListeners } from "../components/NavBar/NavBar";
+import { listeners as footerListeners } from "../components/Footer/Footer";
 
 export const routes = {
   "/": { title: "Home", render: home },
