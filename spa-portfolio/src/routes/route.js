@@ -1,4 +1,4 @@
-import { template as home } from "../pages/Home";
+/* import { template as home } from "../pages/Home";
 import { template as portfolio } from "../pages/Portfolio";
 import { template as contact } from "../pages/Contact";
 import { template as about } from "../pages/About";
@@ -27,3 +27,4 @@ export const router = () => {
     history.replaceState("", "", "/notfound");
   }
 };
+ */
