@@ -1,7 +1,8 @@
-import "./style.css";
-import { router } from "../src/routes/route";
+import "../style.css";
+import { router } from "./routes/route";
 
-//gotta study this part of the code to understand it properly
+//gotta study this part of the code to understand it
+
 window.addEventListener("click", (e) => {
   if (e.target.matches("[data-link]")) {
     e.preventDefault();
@@ -10,5 +11,6 @@ window.addEventListener("click", (e) => {
   }
 });
 
+router();
 window.addEventListener("popstate", router);
 window.addEventListener("DOMContentLoaded", router);

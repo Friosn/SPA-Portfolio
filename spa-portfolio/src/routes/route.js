@@ -4,6 +4,8 @@ import { template as contact } from "../pages/Contact";
 import { template as about } from "../pages/About";
 import { template as notfound } from "../pages/notFound";
 //import listeners from navBar
+import { listeners as navBarListeners } from "../components/NavBar";
+import { listeners as footerListeners } from "../components/Footer";
 
 export const routes = {
   "/": { title: "Home", render: home },
@@ -13,14 +15,15 @@ export const routes = {
 };
 
 export const router = () => {
-  let page = routes.title;
+  let page = routes[location.pathname];
   if (page) {
     document.title = page.title;
     document.querySelector("#app").innerHTML = page.render();
-    //navBarListeners();
+    navBarListeners();
+    footerListeners();
     //If there would be more listeners from other pages, we would add them here with conditionals.
+    if (page.title === "Projects") page.listeners();
   } else {
     history.replaceState("", "", "/notfound");
-    notfound();
   }
 };
